@@ -7,8 +7,11 @@ def find_highest():
     with open('list_of_studs.txt') as stud_list:
         # read list_of_studs.txt by line
         for line in stud_list:
-            print('a')
             # get name and gwa
+            name_gwa = line.strip().split(',')
+            name = name_gwa[0]
+            gwa = name_gwa[-1]
+            print(name_gwa)
             # store name and gwa in dict
             # store gwa in list for comparison
             # get highest gwa in gwa_list
