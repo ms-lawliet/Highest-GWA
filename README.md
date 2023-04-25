@@ -1,4 +1,6 @@
-# Highest-GWA
+<p align="center">
+  <img width="800" src="https://user-images.githubusercontent.com/129574658/234306666-a65c8f96-d020-47b1-b6a3-eb468b354732.png"
+</p>
 
 ## *About the Program*
 
