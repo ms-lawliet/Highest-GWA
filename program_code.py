@@ -18,6 +18,13 @@ blue = '\033[94m'
 cyan = '\033[96m'
 colors = [red, green, yellow, white]
 
+# print program title
+print(f"{cyan}-"*185)
+print(Back.BLACK + pyfiglet.figlet_format('Highest GWA finder', font='nancyj-underlined', width=185, justify='center'),
+      end='')
+print(Back.RESET + f"{cyan}-"*185)
+time.sleep(0.5)
+
 
 def find_highest():
     # open list_of_studs.txt
