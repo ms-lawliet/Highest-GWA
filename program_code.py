@@ -1,8 +1,9 @@
 # Write a Python program that read a file containing the name of 20 students together with their GWA.
 # The program will outputs the name of the student who got the highest GWA (including the GWA).
 
-# create stud_dict
+# create stud_dict and gwa_list
 stud_dict = {}
+gwa_list = []
 
 
 def find_highest():
@@ -17,9 +18,11 @@ def find_highest():
             # store name and gwa in dict
             stud_dict[name] = gwa
             # store gwa in list for comparison
+            gwa_list.append(gwa)
             # get highest gwa in gwa_list
             # search for name of stud with highest gwa in stud_dict
             # print out result
+        print(gwa_list)
 
 
 find_highest()
