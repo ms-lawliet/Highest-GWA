@@ -63,7 +63,11 @@ def find_highest():
         for name, gwa in stud_dict.items():
             if gwa == highest:
                 # print out result
-                print(f'The student with the highest GWA is {name} with a total average of {gwa.strip()}.')
+                result = f'{blue}The student with the highest GWA is {white}{name}{blue} with a total average of ' \
+                         f'{white}{gwa.strip()}.\n'
+                for each_letter in result:
+                    print(each_letter, end='')
+                    time.sleep(0.04)
 
 
 find_highest()
