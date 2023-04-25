@@ -19,10 +19,15 @@ def find_highest():
             stud_dict[name] = gwa
             # store gwa in list for comparison
             gwa_list.append(gwa)
-            # get highest gwa in gwa_list
-            # search for name of stud with highest gwa in stud_dict
-            # print out result
-        print(gwa_list)
+
+        # get highest gwa in gwa_list
+        for grade in gwa_list:
+            highest = gwa_list[0]
+            if grade > highest:
+                highest = grade
+                
+        # search for name of stud with highest gwa in stud_dict
+        # print out result
 
 
 find_highest()
