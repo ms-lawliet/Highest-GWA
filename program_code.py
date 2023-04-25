@@ -25,9 +25,12 @@ def find_highest():
             highest = gwa_list[0]
             if grade > highest:
                 highest = grade
-                
+
         # search for name of stud with highest gwa in stud_dict
-        # print out result
+        for name, gwa in stud_dict.items():
+            if gwa == highest:
+                # print out result
+                print(f'The student with the highest GWA is {name} with a total average of {gwa.strip()}.')
 
 
 find_highest()
