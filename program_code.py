@@ -46,6 +46,19 @@ def find_highest():
             if grade > highest:
                 highest = grade
 
+        # loading....
+        count = 0
+        while count != 4:
+            for i in range(len(colors)):
+                loading = (f"{colors[i]}Calculating results" + "." * count)
+                print('\r', loading, end="")
+                time.sleep(0.6)
+                count += 1
+                if count == 4:
+                    print('\r' + ' '*60)
+                    break
+            time.sleep(0.4)
+
         # search for name of stud with highest gwa in stud_dict
         for name, gwa in stud_dict.items():
             if gwa == highest:
