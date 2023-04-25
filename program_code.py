@@ -1,9 +1,22 @@
 # Write a Python program that read a file containing the name of 20 students together with their GWA.
 # The program will outputs the name of the student who got the highest GWA (including the GWA).
 
+import time
+import pyfiglet
+from colorama import Back
+
 # create stud_dict and gwa_list
 stud_dict = {}
 gwa_list = []
+
+# create list of colors for font
+yellow = '\033[93m'
+red = '\033[91m'
+white = '\033[97m'
+green = '\033[92m'
+blue = '\033[94m'
+cyan = '\033[96m'
+colors = [red, green, yellow, white]
 
 
 def find_highest():
